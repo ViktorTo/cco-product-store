@@ -52,9 +52,12 @@ Node.js (LTS recommended)
 npm (included with Node.js)
 Git
 Installation
+
 Clone the repository:
-bash
+
+```bash
 git clone https://github.com/ViktorTo/cco-product-store.git
+```
 
 ### Navigate
 
