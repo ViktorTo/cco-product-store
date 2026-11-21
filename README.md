@@ -6,7 +6,7 @@ A responsive e-commerce demo application built with Vue 3, TypeScript and Tailwi
   <img
     src="./screenshots/desktop.png"
     width="75%"
-    alt="ShopStore desktop view"
+    alt="desktop view"
   />
 </p>
 
@@ -14,7 +14,7 @@ A responsive e-commerce demo application built with Vue 3, TypeScript and Tailwi
   <img
     src="./screenshots/mobile.png"
     width="25%"
-    alt="ShopStore mobile view"
+    alt="mobile view"
   />
 </p>
 
@@ -54,19 +54,37 @@ Git
 Installation
 Clone the repository:
 bash
-git clone [<YOUR_REPOSITORY_URL>](https://github.com/ViktorTo/cco-product-store.git)
+git clone https://github.com/ViktorTo/cco-product-store.git
 
-Navigate into the project directory:
-bash
+### Navigate
+
+```bash
 cd cco-product-store
+```
 
-Install dependencies:
-bash
+### Installation
+
+```bash
 npm install
+```
 
-Start the development server:
-bash
+### Start development server
+
+```bash
 npm run dev
+```
+
+### Run tests
+
+```bash
+npm run test:run
+```
+
+### Build for production
+
+```bash
+npm run build
+```
 
 Open the local URL provided by Vite, usually:
 text
