@@ -152,6 +152,7 @@ No API key is required.
 
 ### Project Structure
 
+```
 src/
 ├── assets/ # Global styles and assets
 ├── components/ # Reusable Vue components
@@ -164,6 +165,7 @@ src/
 ├── views/ # Application views
 ├── App.vue
 └── main.ts
+```
 
 ### Architecture & Implementation
 
