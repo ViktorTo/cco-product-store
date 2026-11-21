@@ -23,7 +23,7 @@
       class="bg-white border border-red-200 rounded-xl p-8 text-center"
     >
       <h3 class="text-lg font-semibold text-gray-900">
-        Something went wrong
+        Något gick fel
       </h3>
 
       <p class="text-gray-500 mt-2">
@@ -32,9 +32,9 @@
 
       <button
         @click="emit('retry')"
-        class="mt-5 px-5 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition"
+        class="mt-5 px-5 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition"
       >
-        Try again
+        Försök igen
       </button>
     </div>
 

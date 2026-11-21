@@ -31,6 +31,7 @@ export async function fetchProducts(
   sortBy?: SortBy,
   order?: SortOrder,
 ): Promise<ProductResponse> {
+  checkSimulatedError();
   const params = createParams(limit, skip, sortBy, order);
 
   const response = await fetch(`${API_URL}?${params}`, { signal });
@@ -50,6 +51,7 @@ export async function searchProducts(
   sortBy?: SortBy,
   order?: SortOrder,
 ): Promise<ProductResponse> {
+  checkSimulatedError();
   const params = createParams(limit, skip, sortBy, order);
   params.set("q", query);
 
@@ -75,4 +77,13 @@ export async function fetchProductById(
   }
 
   return response.json();
+}
+
+const SIMULATE_API_ERROR =
+  import.meta.env.DEV && import.meta.env.VITE_SIMULATE_API_ERROR === "true";
+
+function checkSimulatedError() {
+  if (SIMULATE_API_ERROR) {
+    throw new Error("Simulated API error");
+  }
 }
