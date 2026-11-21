@@ -95,6 +95,7 @@ Available Scripts
 The following scripts are available in package.json.
 
 Command Description
+```
 npm run dev Start the development server
 npm run build Build the application for production
 npm run preview Preview the production build locally
@@ -102,23 +103,30 @@ npm run test Run Vitest in watch mode
 npm run test:run Run all tests once
 npm run test:coverage Run tests and generate a coverage report
 Running Tests
+```
 
 This project uses Vitest for unit testing.
 
 Run tests in watch mode:
-
+```
 bash
 npm run test
+```
 
+```
 Run all tests once:
+```
 
+```
 bash
 npm run test:run
+```
 
 Generate a test coverage report:
-
+```
 bash
 npm run test:coverage
+```
 
 ### Current Test Coverage
 
