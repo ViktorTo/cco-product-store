@@ -120,7 +120,7 @@ Generate a test coverage report:
 bash
 npm run test:coverage
 
-Current Test Coverage
+### Current Test Coverage
 
 The project includes unit tests for:
 
@@ -133,7 +133,7 @@ Storing and retrieving cached products.
 Handling missing cache entries.
 Expiring cached products after five minutes.
 
-API
+### API
 
 Product data is provided by DummyJSON.
 
@@ -150,8 +150,8 @@ The API supports pagination through the limit and skip query parameters.
 
 No API key is required.
 
-Project Structure
-text
+### Project Structure
+
 src/
 ├── assets/ # Global styles and assets
 ├── components/ # Reusable Vue components
@@ -165,9 +165,7 @@ src/
 ├── App.vue
 └── main.ts
 
-Architecture & Implementation
-
-A few implementation details worth highlighting:
+### Architecture & Implementation
 
 Composition API: Components and reusable logic are built using Vue 3's Composition API and <script setup lang="ts">.
 State management: Pinia manages shared shopping cart state.
@@ -187,7 +185,15 @@ Checkout and payment processing are not implemented.
 Product stock and prices are not validated by a real commerce backend.
 Future Improvements
 
-Potential features and improvements:
+### Fake error state
+
+In .env.local set:
+
+```
+VITE_SIMULATE_API_ERROR=true
+```
+
+### Potential features and improvements:
 
 Checkout page and order summary.
 Product category filtering.
